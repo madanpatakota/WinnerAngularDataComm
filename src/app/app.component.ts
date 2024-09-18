@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'WinnerAngularDataComm';
+  
+
+   technology = "Angular";
+
+   location = "Bangolore";
+
+   childStatus = "";
+
+   handleDataPost(event:any){
+
+    this.childStatus = event;
+     console.log("I am in Parent Component and data is " , event )
+
+   }
+
+
+
 }
